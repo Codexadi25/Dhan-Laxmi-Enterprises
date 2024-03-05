@@ -1,8 +1,4 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './Header.css';
-import Home from './Home.js';
-
 import HomeIcon from '@mui/icons-material/Home';
 import StoreIcon from '@mui/icons-material/Store';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -22,13 +18,13 @@ function Header() {
          Dhan Laxmi Enterprises
       </div>
       <div className='nav'>
-         <a href='/'><HomeIcon className='navIcon'/>
+         <a href='/home'><HomeIcon className='navIcon'/>
             <lable id='navLable'>Home</lable>
          </a>
-         <a href='/'><StoreIcon className='navIcon'/>
+         <a href='/store'><StoreIcon className='navIcon'/>
             <label id='navLable'>Store</label>
          </a>
-         <a href='/'><InfoIcon className='navIcon'/>
+         <a href='#about'><InfoIcon className='navIcon'/>
             <label id='navLable'>About</label>
          </a>
          <div className='profile'>
@@ -43,13 +39,7 @@ function Header() {
       </div>
 
 
-      <Router>
-         <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/home' element={<Home/>}/>
-            {/* <Route path='/store' element={<Store/>}/> */}
-         </Routes>
-      </Router>
+      
     </div>
   )
 }
