@@ -1,6 +1,5 @@
 import React from 'react';
-import { Router, Routes, Route } from "react-router-dom";
-import Store from './Store.jsx';
+
 
 function Home() {
   return (
@@ -14,12 +13,7 @@ function Home() {
       </div>
 
 
-      <Router>
-         <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/store' element={<Store/>}/>
-         </Routes>
-      </Router>
+      
     </div>
   )
 }

@@ -6,7 +6,7 @@ import './Store.css';
 function Store() {
   return (
     <div>
-
+      This is Stores Page
     </div>
   )
 }
