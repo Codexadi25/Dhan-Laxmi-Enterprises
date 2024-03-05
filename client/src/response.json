@@ -1,0 +1,24 @@
+{
+   "image": [
+      {
+         "src": "./assets/img1",
+         "alt": "banner1" 
+      },
+      {
+         "src": "./assets/img2",
+         "alt": "banner2" 
+      },
+      {
+         "src": "./assets/img3",
+         "alt": "banner3" 
+      },
+      {
+         "src": "./assets/img4",
+         "alt": "banner4" 
+      },
+      {
+         "src": "./assets/img5",
+         "alt": "banner5" 
+      }
+   ]
+}
