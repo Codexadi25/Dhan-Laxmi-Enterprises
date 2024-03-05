@@ -1,15 +1,45 @@
-import React from 'react';
-import { Router, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './Header.css';
 import Home from './Home.js';
 
+import HomeIcon from '@mui/icons-material/Home';
+import StoreIcon from '@mui/icons-material/Store';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import InfoIcon from '@mui/icons-material/Info';
+import { Avatar } from '@mui/material';
+
+
+
 function Header() {
+
+   const [user, useUser ] = useState('User');
+   const [goto, useGoto ] = useState('Login');
+
   return (
-    <div>
+    <div className='header'>
+      <div className='logo'>
+         Dhan Laxmi Enterprises
+      </div>
       <div className='nav'>
-         <a href='/'>Home</a>
-         <a href='/'>Store</a>
-         <a href='/'>Account</a>
-         <a href='/'>About</a>
+         <a href='/'><HomeIcon className='navIcon'/>
+            <lable id='navLable'>Home</lable>
+         </a>
+         <a href='/'><StoreIcon className='navIcon'/>
+            <label id='navLable'>Store</label>
+         </a>
+         <a href='/'><InfoIcon className='navIcon'/>
+            <label id='navLable'>About</label>
+         </a>
+         <div className='profile'>
+            <Avatar/>
+            <span className='ac'>
+               <a href='/'>
+                  <div className='l1'>Hi, {user}</div>
+                  <div className='l2'>{goto}</div>
+               </a>
+            </span>
+         </div>
       </div>
 
 
