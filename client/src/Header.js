@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+
 import HomeIcon from '@mui/icons-material/Home';
 import StoreIcon from '@mui/icons-material/Store';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import InfoIcon from '@mui/icons-material/Info';
 import { Avatar } from '@mui/material';
 
@@ -38,8 +38,6 @@ function Header() {
          </div>
       </div>
 
-
-      
     </div>
   )
 }
