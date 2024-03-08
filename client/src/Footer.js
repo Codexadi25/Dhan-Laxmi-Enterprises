@@ -18,7 +18,7 @@ function Footer() {
     <div className='footer'>
       <div className='footer__body'>
         <div className='footer__box'>
-          <img src='' className='logo' alt='academya-logo'/>
+          <img src='' className='logo' alt='DhanLaxmiEnterprise-logo'/>
           <p className='tagline'>Dhan Laxmi Enterprises | A Kanpur-south based multi-business enterprise.</p>
         </div>
         <div className='footer__links'>

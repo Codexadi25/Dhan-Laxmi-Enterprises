@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './Store.css';
 
 function Store() {
   return (
-    <div>Store</div>
+    <div className='store'>
+      <div className='banner carousel'>
+        {/* <img src='' alt='banner' className=''/> */}
+      </div>
+
+    </div>
   )
 }
 

@@ -5,7 +5,8 @@
    display: flex;
    width: 100vw;
    height: 52px;
-   background-image: linear-gradient(120deg, #335eff, #a0bef8, #b5f0f0);
+   /* background-image: linear-gradient(120deg, #0396ff, #abdcff, #b5f0f0); */
+   background-color: #021024;
    align-items: center;
    justify-content: flex-end;
 }
@@ -58,4 +59,11 @@
 }
 .l2{
    font-size: 12px;
+}
+.ac>a{
+   color: #fff;
+}
+.ac>a:hover{
+   color: #0077ff;
+   text-decoration: underline;
 }
