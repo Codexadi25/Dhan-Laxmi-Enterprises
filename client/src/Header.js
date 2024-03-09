@@ -15,7 +15,7 @@ function Header() {
   return (
     <div className='header'>
       <div className='logo'>
-         Dhan Laxmi Enterprises
+         <a href='/home'>Dhan Laxmi Enterprises</a>
       </div>
       <div className='nav'>
          <a href='/home'><HomeIcon className='navIcon'/>

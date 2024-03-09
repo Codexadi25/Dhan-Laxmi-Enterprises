@@ -18,8 +18,8 @@ function Footer() {
     <div className='footer'>
       <div className='footer__body'>
         <div className='footer__box'>
-          <img src='' className='logo' alt='DhanLaxmiEnterprise-logo'/>
-          <p className='tagline'>Dhan Laxmi Enterprises | A Kanpur-south based multi-business enterprise.</p>
+          <img src='' className='footlogo' alt='DhanLaxmiEnterprise-logo'/>
+          <p className='tagline'><h3>Dhan Laxmi Enterprise</h3>A Kanpur-south based multi-business enterprise.</p>
         </div>
         <div className='footer__links'>
           <div className='sections'>
@@ -55,22 +55,19 @@ function Footer() {
             <a href='' className='links'>Dhan Laxmi Enterprises</a> 
           </div>
           <div className='sections'>
-            <span><div className='heading'>Career & Staffing</div>
-              <a href='https://adityatechndevops.web.app' className='links' target='__blank' >Aditya Tech & Devops&nbsp;<LaunchIcon fontSize='14'/></a>
-            </span>
+            <div className='heading'>Devloper's Contact
+              <a href='https://adityatechndevops.web.app' className='links' target='__blank' >Aditya Tech & Devops&nbsp;<LaunchIcon fontSize='14'/></a></div>
           </div>
         </div>
       </div>
       <hr/>
-      <p className='footer__bottomText'>By continuing this page, you agree to our Terms of Service, Cookie, Privacy, and Content Policies.
-      All trademarks are properties of their respective owners.</p>
+      <p className='footer__bottomText'>By continuing past this page, you agree to our Terms of Service, Cookie, Privacy, and Content Policies. All trademarks are properties of their respective owners.</p>
       <div className='footer__bottom'>
-        
         <span>Copyright-2024 &copy; All rights reserved.</span>
         <span>
           <div id="google_translate_element"></div>
         </span>
-        </div>
+      </div>
     </div>
   )
 }

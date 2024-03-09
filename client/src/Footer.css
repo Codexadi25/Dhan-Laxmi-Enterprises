@@ -1,5 +1,4 @@
 .footer{
-   z-index: 1;  
    width: 100vw;
    background-color: #131A22;
 }
@@ -19,7 +18,7 @@
    width: fit-content;
    text-align: left;
 }
-.logo{
+.footlogo{
    height: 70px;
    filter: drop-shadow(1px 1px 5px #fff);
 }
@@ -34,7 +33,7 @@ a:hover{
    color:#ccc;
    
 }
-.heading{
+.sections>.heading{
    color: #ddd;
    font-weight: 700;
 }
@@ -44,6 +43,11 @@ a:hover{
    grid-template-columns: repeat(3,1fr);
    align-items: center;
    justify-content: space-around;
+}
+.sections{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 .links{
    display: flex;
@@ -60,38 +64,47 @@ a:hover{
 
 
 
-.footer__bottomText{
-   color: #999;
-}
+
 .footer__bottom{
    display: flex;
    height: auto;
    width: 100vw;
+   color: #555;
    background-color: #0F1111;
-   color: white;
+   justify-content: space-around;
    padding: 10px 0px;
-   justify-content: space-evenly;
+   margin: auto;
 }
-
+.footer__bottomText{
+   color: #555;
+}
 
 @media screen and (max-width: 800px) {
    .footer__body{
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      
+      padding: none;
    }
-
-   .logo{
-      display: flex;
-      align-items: center;
+   .footer__box{
+      display: block;
+      border-right: none;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 20px;
    }
-   .connections{
-      grid-template-rows: repeat(2,1fr);
+   .tagline{
+      text-align: center;
+   }
+   .footer__links{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
    }
    .links{
       width: max-content;
    }
-   
+   .footer__bottom{
+      flex-direction: column;
+   }
    hr{
       height: 2px;
       background-color: #ddd;

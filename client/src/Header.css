@@ -17,6 +17,7 @@
    align-items: center;
    margin: 25px;
 }
+.logo>a{color: #fff;}
 .nav{
    display: flex;
    float: right;
@@ -67,3 +68,4 @@
    color: #0077ff;
    text-decoration: underline;
 }
+
