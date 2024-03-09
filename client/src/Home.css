@@ -24,10 +24,83 @@
    margin: auto;
    align-items: center;
    font-size: 72px;
+   backdrop-filter: blur(5px);
 }
 .bannerText>.tagline{
    font-size: 26px;
    display: flex;
    position: relative;
    margin-left: 20vw;
+}
+
+.quotationBox{
+   position: relative;
+   top: 250px;
+   width: 450px;
+   contain: content;
+   text-align: left;
+   padding: 24px;
+   margin: 10px;
+   backdrop-filter: blur(8px);
+   outline: 1px solid #555;
+   border-radius: 20px;
+}
+.quotation__box:hover{
+   backdrop-filter: blur(20px);
+}
+.qicon{
+   height: 72px;
+}
+.quote{
+   font-size: 42px;
+   font-weight: 100;
+   h1{
+      display: inline;
+   }
+}
+.subscript{
+   display: flex;
+   float: right;  
+   padding: 20px;
+   color: #000;
+}
+.homeBody{
+   height: 750px;
+   width: 100vw;
+   background-image: url('./assets/2.jpg');
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.card{
+   height: 400px;
+   width: 300px;
+   background-color: #000;
+   border-radius: 20px;
+}
+.card>img{
+   background-color: #fff;
+}
+.card>a{
+   outline: 1px solid #555;
+   background-color: #fff;
+   border-radius: 10px;
+   padding: 5px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+   .companyHeading{
+      margin-top: -25px;
+      font-size: 32px;
+   }
+   .bannerText>.tagline{
+      font-size: 16px;
+   }
 }

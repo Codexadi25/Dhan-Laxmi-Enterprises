@@ -45,7 +45,7 @@ function Footer() {
             </div>
             <a href='mailto:/.com' className='links mail'><MailIcon/>E-mail</a>
             <a href='https://wa.me/+91?text=HI!%20I%20want%20to%20know%20more%20about%20Dhan%20Laxmi%20Enterprises.' target='__blank' className='links wa'><WhatsAppIcon/>WhatsApp</a>
-            <a href='tel:/+91' target='__blank' className='links tel'><PhoneInTalk/>+91 </a>
+            
           </div>
           <div className='sections'>
             <div className='heading'>
