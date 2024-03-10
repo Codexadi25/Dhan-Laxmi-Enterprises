@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import Card from './Card.js'
 import banner from './assets/defbanner.jpg';
 import { ReactTyped } from "react-typed";
 import qright from './assets/qright.png'
@@ -42,12 +43,7 @@ function Home() {
         </div>
       </div>
       <div className='prods'>
-        <div className='card'>
-          <img src='' alt='Prod1'/>
-          <a href='#'>
-            Buy Now
-          </a>
-        </div>
+        <Card imglink={'https://m.media-amazon.com/images/I/71yl-NIFgpL._SX679_.jpg'} price={20} plink="/store" />
       </div>
     </div>
   )

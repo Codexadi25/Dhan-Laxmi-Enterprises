@@ -5,7 +5,7 @@ function Store() {
   return (
     <div className='store'>
       <div className='banner carousel'>
-        {/* <img src='' alt='banner' className=''/> */}
+        <img src='' alt='banner' className=''/>
       </div>
 
     </div>
