@@ -42,8 +42,9 @@ function Home() {
           <img src={qright} alt='quote' className='qicon'/>
         </div>
       </div>
-      <div className='prods'>
-        <Card imglink={'https://m.media-amazon.com/images/I/71yl-NIFgpL._SX679_.jpg'} price={20} plink="/store" />
+      <div className='products'>
+        <h1 className='productsShop'>Our Products</h1> 
+        <Card imglink={'https://m.media-amazon.com/images/I/71yl-NIFgpL._SX679_.jpg'} price={20} plink="/store" />       
       </div>
     </div>
   )
