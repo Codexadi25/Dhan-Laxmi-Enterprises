@@ -6,6 +6,7 @@ function Card({ title, price, imglink, plink}) {
   return (
     <div className='card'>
       <img src={imglink} alt='product' />
+      <b className='prodTitle'>{title}</b>
       <div className='cardFoot'>
         <span>Price ₹{price}</span>
         <a href={plink}>
