@@ -9,8 +9,8 @@ function Card({ title, price, imglink, plink}) {
       <b className='prodTitle'>{title}</b>
       <div className='cardFoot'>
         <span>Price ₹{price}</span>
-        <a href={plink}>
-          <button>Order Now</button>
+        <a className='buyLink' href={plink}>
+          Order Now
         </a>
       </div>
     </div>

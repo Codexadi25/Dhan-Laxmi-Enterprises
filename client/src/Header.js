@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-
+import './Header.css';
 import HomeIcon from '@mui/icons-material/Home';
 import StoreIcon from '@mui/icons-material/Store';
 import InfoIcon from '@mui/icons-material/Info';
+import Tooltip from '@mui/material/Tooltip';
 import { Avatar } from '@mui/material';
 
 
@@ -19,13 +20,13 @@ function Header() {
       </div>
       <div className='nav'>
          <a href='/home'><HomeIcon className='navIcon'/>
-            <lable id='navLable'>Home</lable>
+            <Tooltip id='navLable'>Home</Tooltip>
          </a>
          <a href='/store'><StoreIcon className='navIcon'/>
-            <label id='navLable'>Store</label>
+            <Tooltip id='navLable'>Store</Tooltip>
          </a>
          <a href='#about'><InfoIcon className='navIcon'/>
-            <label id='navLable'>About</label>
+            <Tooltip id='navLable'>About</Tooltip>
          </a>
          <div className='profile'>
             <Avatar/>
