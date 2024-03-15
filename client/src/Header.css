@@ -30,18 +30,8 @@
    color: #fefefe;
    font-weight: 500;
 }
-#navLable{
-   position: relative;
-   top: 40px;
-   visibility: hidden;
-}
 .nav>a:hover{
    color: #3950ff;
-}
-.nav>a:hover #navLable{
-   transform: translateY(-40px);
-   visibility: visible;
-   color: #0077ff;
 }
 .profile{
    display: flex;
