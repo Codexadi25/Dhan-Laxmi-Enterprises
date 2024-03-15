@@ -19,32 +19,32 @@ function Header() {
          <a href='/home'>Dhan Laxmi Enterprises</a>
       </div>
       <div className='nav'>
-         <a href='/home'>
-            <Tooltip title='Home'>
+         <Tooltip title='Home'>
+            <a href='/home'>
                <HomeIcon/>
-            </Tooltip>
-         </a>
-         <a href='/store'>
-            <Tooltip title='Store'>
+            </a>
+         </Tooltip>
+         <Tooltip title='Store'>
+            <a href='/store'>
                <StoreIcon/>
+            </a>
             </Tooltip>
-         </a>
-         <a href='#about'>
-            <Tooltip title='About Us'>
+         <Tooltip title='About Us'>
+            <a href='#about'>
                <InfoIcon/>
-            </Tooltip>
-         </a>
-         <div className='profile'>
-            <Tooltip title='Account' >
+            </a>
+         </Tooltip>
+         <Tooltip title='Account' >
+            <div className='profile'>
                <Avatar/>
-            </Tooltip>
-            <span className='ac'>
-               <a href='/'>
-                  <div className='l1'>Hi, {user}</div>
-                  <div className='l2'>{goto}</div>
-               </a>
-            </span>
-         </div>
+               <span className='ac'>
+                  <a href='/'>
+                     <div className='l1'>Hi, {user}</div>
+                     <div className='l2'>{goto}</div>
+                  </a>
+               </span>
+            </div>
+         </Tooltip>
       </div>
 
     </div>
