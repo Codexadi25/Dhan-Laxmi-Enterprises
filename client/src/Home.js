@@ -4,10 +4,15 @@ import banner from './assets/defbanner.svg';
 import { ReactTyped } from "react-typed";
 import qright from './assets/qright.png';
 import Intro from './Intro.js';
+import { Skeleton } from '@mui/material';
+
+import fimg from './assets/C0014.png'
 
 
 
 function Home() {
+
+  
 
   return (
     <div className='home'>
@@ -34,12 +39,22 @@ function Home() {
       <div className='quotationBox'>
         <img src={qright} alt='quote' className='qicon up'/><span className='quote'>Cleanliness is a necessity, not a luxury.</span><img src={qright} alt='quote' className='qicon down'/>
         <div className='subscript'>
-          <i className='author'>---: Rahul Gupta</i>
-          <b className='designation'>&nbsp;CEO, Founder</b>
+          <b className='designation'>Rahul Gupta</b>
+          <i className='author'>CEO, Founder</i>
         </div>
       </div>
       <div className='homeBody'>
         <Intro/>
+        <div className='leadContainer'>
+          <img className='leadImg' src={fimg} alt='Rahul Gupta'/>
+          <div className='leadPara'>
+            We take our every decisions with the inspiration from our vision that aims to build a healthy, clean & green environment and and enhance people’s lives with our products.
+          </div>
+          <span className=''>
+            <b className='designation'>Rahul Gupta</b>
+            <i className='author'> CEO, Founder</i>
+          </span>
+        </div>
       </div>
       
     </div>

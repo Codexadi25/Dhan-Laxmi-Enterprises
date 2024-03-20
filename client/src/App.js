@@ -7,6 +7,11 @@ import Footer from './Footer.js';
 
 
 function App() {
+
+  // useEffect(() => {
+  //   axios.get('http://localhost:8080')
+  // }, [])
+
   return (
     <div className="App">
       <Header/>

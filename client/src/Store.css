@@ -1,8 +1,0 @@
-.banner{
-   height: 900px;
-   width: 100vw;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-image: linear-gradient(to bottom, #758eb7, #a5cad2);
-}

@@ -45,12 +45,13 @@
    contain: content;
    text-align: left;
    padding: 24px;
+   background-color: #e5e5e552;
+   outline: 1px solid #fff;
    backdrop-filter: blur(8px);
-   outline: 1px solid #b5f0f061;
-   border-radius: 20px;
+   border-radius: 10px;
 }
 .quotationBox:hover{
-   background-color: #e5e5e552;
+   outline: 1px solid #b5f0f061;
    color: #000;
 }
 .qicon{
@@ -58,14 +59,11 @@
    width: 72px;
 }.up{
    rotate: 180deg;
-}.down{
-   display: flex;
-   justify-content: right;
 }
 .quote{
    font-size: 32px;
    font-family: "Poppins", sans-serif;
-   font-weight: 100;
+   font-weight: 200;
    margin-left: 25px;
    font-style: normal;
    h1{
@@ -74,18 +72,52 @@
 }
 .subscript{
    display: flex;
-   width: 100%;
+   margin-top: -42px;
+   flex-direction: column;
+   align-items: flex-end;
    justify-content: right;
    color: #000;
    font-family: "Poppins", sans-serif;
 }
 .homeBody{
+   display: flex;
+   align-items: center;
    padding: 40px;
+   background-image: url(./assets/bg-business.png);
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 
 
-
-
+.leadContainer{
+   width: 370px;
+   display: flex;
+   flex: .25;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 24px;
+   background-color: #fefefe;
+   backdrop-filter: blur(8px);
+   border-radius: 10px;
+}
+.leadImg{
+   display: flex;
+   height: 300px;
+   width: 300px;
+   border-radius: 50%;
+   background-color: #a1c8ff;
+   mask-size: contain;
+   mask-repeat: no-repeat;
+}
+.leadPara{
+   display: flex;
+   float: right;
+   width: 100%;
+   font-size: 18px;
+   font-weight: 100;
+   font-family: "Ubuntu", sans-serif;
+}
 
 
 
