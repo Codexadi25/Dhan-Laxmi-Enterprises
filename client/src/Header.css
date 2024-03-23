@@ -16,7 +16,12 @@
    align-items: center;
    margin: 25px;
 }
-.logo>a{color: #fff;}
+.logo>a{
+   color: #fff;
+   img{
+      height: 40px;
+   }
+}
 .nav{
    display: flex;
    float: right;

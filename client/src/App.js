@@ -4,6 +4,7 @@ import Home from './Home.js';
 import Store from './Store.js';
 import Header from './Header.js';
 import Footer from './Footer.js';
+import Checkout from './Checkout.js';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path='/' element={<Home/>}/>
             <Route path='/home' element={<Home/>}/>
             <Route path='/store' element={<Store/>}/>
+            <Route path='/checkout' element={<Checkout/>}/>
          </Routes>
       </Router>
       <Footer/>

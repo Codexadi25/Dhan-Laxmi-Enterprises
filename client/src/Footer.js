@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-// import logo from './academya-logo.png';
+import footLogo from './assets/DLEP.png';
 import MailIcon from '@mui/icons-material/Mail';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -18,7 +18,7 @@ function Footer() {
     <div className='footer'>
       <div className='footer__body'>
         <div className='footer__box'>
-          <img src='' className='footlogo' alt='DhanLaxmiEnterprise-logo'/>
+          <img src={footLogo} className='footlogo' alt='DhanLaxmiEnterprise-logo'/>
           <p className='tagline'><h3>Dhan Laxmi Enterprise</h3>A Kanpur-south based multi-business enterprise.</p>
         </div>
         <div className='footer__links'>
@@ -51,7 +51,7 @@ function Footer() {
             <div className='heading'>
               Businesses
             </div>
-            <a href='' className='links'>Faxo India</a>
+            <a href='' className='links'>Fexo</a>
             <a href='' className='links'>Dhan Laxmi Enterprises</a> 
           </div>
           <div className='sections'>

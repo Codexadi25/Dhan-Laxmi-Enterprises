@@ -20,7 +20,7 @@
 }
 .footlogo{
    height: 70px;
-   filter: drop-shadow(1px 1px 5px #fff);
+   filter: drop-shadow(1px 1px 1px #fff);
 }
 hr{
    width: 95vw;

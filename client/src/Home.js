@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import banner from './assets/defbanner.svg';
+import banner from './assets/banner.jpg';
 import { ReactTyped } from "react-typed";
 import qright from './assets/qright.png';
 import Intro from './Intro.js';

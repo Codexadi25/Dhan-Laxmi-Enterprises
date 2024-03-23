@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './Header.css';
+import Logo from './assets/DLEP.png'
 import HomeIcon from '@mui/icons-material/Home';
 import StoreIcon from '@mui/icons-material/Store';
-import InfoIcon from '@mui/icons-material/Info';
 import Tooltip from '@mui/material/Tooltip';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Avatar } from '@mui/material';
 
 
@@ -16,7 +17,7 @@ function Header() {
   return (
     <div className='header'>
       <div className='logo'>
-         <a href='/home'>Dhan Laxmi Enterprises</a>
+         <a href='/home'><img src={Logo} alt='Logo'/></a>
       </div>
       <div className='nav'>
          <Tooltip title='Home'>
@@ -28,10 +29,11 @@ function Header() {
             <a href='/store'>
                <StoreIcon/>
             </a>
-            </Tooltip>
-         <Tooltip title='About Us'>
-            <a href='#about'>
-               <InfoIcon/>
+         </Tooltip>
+         
+         <Tooltip title='Cart'>
+            <a href='/checkout'>
+               <ShoppingCartIcon/>
             </a>
          </Tooltip>
          <Tooltip title='Account' >
