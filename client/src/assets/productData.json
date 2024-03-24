@@ -1,0 +1,33 @@
+{
+   "products": [
+      {
+         "_id": "P001",
+         "title": "Toilet Cleaner Chotu",
+         "description": "250ml Pack of 24 Pcs",
+         "prodImg": [
+            "Image%202.png?alt=media"
+         ],
+         "token": "c6708dc0-70d2-467b-b0a2-2214a9362d68",
+         "price": 720,
+         "mrp": 960,
+         "rating": 4,
+         "weigth": "~7.2Kg",
+         "qty": 24,
+         "hx": "",
+         "wx": "",
+         "lx": ""
+      },
+      {
+         "_id": "P002",
+         "title": "Toilet Cleaner Super Power ",
+         "description": "250ml Pack of 24 Pcs",
+         "price": 720,
+         "mrp": 960,
+         "weigth": "~7.2Kg",
+         "qty": 24,
+         "hx": "",
+         "wx": "",
+         "lx": ""
+      }
+   ]
+}

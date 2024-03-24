@@ -1,4 +1,4 @@
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import React from 'react-tabs';
 import './Intro.css';
 
 

@@ -1,11 +1,15 @@
 import { React, useState } from 'react';
 import './Store.css';
 import Product from './Product.js';
+import data from './assets/productData.json';
 import { Link } from 'react-router-dom';
 import img1 from './assets/img1.png';
 import banner from './assets/defbanner.svg';
 
 function Store() {
+
+
+  
 
   return (
     <div className='store'>
@@ -19,14 +23,6 @@ function Store() {
         </Link>
       </div>
       <div className='storeRow'>
-        <Product 
-          title='Fexo Super Power Toilet Cleaner 1Liter X 24 Pcs per pack'
-          price='750'
-          mrp='800'
-          rating={5}
-          pimg={img1}
-        />
-
         <Product 
           title='Fexo Super Power Toilet Cleaner 1Liter X 24 Pcs per pack'
           price='750' 

@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Product.css';
 import { Link } from 'react-router-dom';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import pimg from './assets/img1.png';
 
 
 
-function Product({ id, title, pimg, price, mrp, rating }) {
+function Product({ id, title, prodImg, price, mrp, rating }) {
+
   let discount = (!mrp)?0:((mrp - price)/mrp)*100;
   return (
     <div className='product'>
       <Link to={`/store/${id}`}>
         <div className='productImg'>
-          <img src={pimg} id='pImg' alt="" />
+          <img src={prodImg} id='pImg' alt="" />
         </div>
       </Link>
       <div className='productInfo'>
