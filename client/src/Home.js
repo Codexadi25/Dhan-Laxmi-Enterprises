@@ -4,7 +4,6 @@ import banner from './assets/banner.jpg';
 import { ReactTyped } from "react-typed";
 import qright from './assets/qright.png';
 import Intro from './Intro.js';
-import { Skeleton } from '@mui/material';
 
 import fimg from './assets/C0014.png'
 

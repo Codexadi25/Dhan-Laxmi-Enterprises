@@ -1,12 +1,15 @@
 import React from 'react';
 import './Checkout.css';
+// import adsATD from '';
+import Subtotal from './Subtotal';
 
 
 function Checkout() {
+   let adsATD = ''
   return (
    <div className='chechout'>
       <div className="checkoutLeft">
-         <img className='checkoutAds' src="" alt="adsBanner"/>
+         <img className='checkoutAds' src={adsATD} alt="adsBanner"/>
          <div class="">
             <h2 class="checkoutTitle">
                
@@ -16,7 +19,7 @@ function Checkout() {
       </div>
       <div class="checkoutRight">
          <h2 class="">
-            Sub Total
+            <Subtotal/>
          </h2>
       </div>
    </div>
