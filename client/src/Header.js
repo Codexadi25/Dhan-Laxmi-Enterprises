@@ -55,7 +55,7 @@ function Header( cxname, cximg ) {
                <Avatar/>
                <span className='ac'>
                   <a href='/'>
-                     <div className='l1'>Hi, {user}</div>
+                     <div className='l1'>Hi, {cxuser}</div>
                      <div className='l2'>{goto}</div>
                   </a>
                </span>

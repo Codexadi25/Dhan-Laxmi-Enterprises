@@ -1,24 +1,13 @@
 import { React, useEffect, useState } from 'react';
 import './Store.css';
 import Product from './Product.js';
-<<<<<<< HEAD
-=======
-import data from './assets/productData.json';
-<<<<<<< HEAD
-=======
 import { Link } from 'react-router-dom';
->>>>>>> d35240bf0486abc5f18c616085e9c73e351af7d4
->>>>>>> 6dde7796be895b8784241f15415167f0d71843d4
 import img1 from './assets/img1.png';
 
 import { db } from './firebase.js'
 import { collection, getDocs } from 'firebase/firestore';
 
 function Store() {
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
   const [prod, setProd] = useState();
   const prodCollectionRef = collection(db, "productsDB")
 
@@ -31,7 +20,6 @@ function Store() {
     getProd();
   }, [])
 
-
   return (
     <div className='store'>      
       <div className='storeRow'>
@@ -48,33 +36,6 @@ function Store() {
           )
         })}
       </div>
-      
-=======
-
-  
-
->>>>>>> 6dde7796be895b8784241f15415167f0d71843d4
-  return (
-    <div className='store'>      
-      <div className='storeRow'>
-        {prod?.map((item) => {
-          return(
-            <Product 
-              title={item.title}
-              price={item.price} 
-              mrp={item.mrp}
-              rating={item.rating}
-              pimg={`${item.pimg+item.pimgtoken}`}
-              
-            />
-          )
-        })}
-      </div>
-<<<<<<< HEAD
-      
-=======
->>>>>>> d35240bf0486abc5f18c616085e9c73e351af7d4
->>>>>>> 6dde7796be895b8784241f15415167f0d71843d4
       <div className='storeRow'>
         <Product 
           title='Fexo Super Power Toilet Cleaner 1Liter X 24 Pcs per pack'
