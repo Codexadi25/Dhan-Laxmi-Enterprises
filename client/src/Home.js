@@ -36,7 +36,9 @@ function Home() {
         </p>
       </div>
       <div className='quotationBox'>
-        <img src={qright} alt='quote' className='qicon up'/><span className='quote'>Cleanliness is a necessity, not a luxury.</span><img src={qright} alt='quote' className='qicon down'/>
+        <img src={qright} alt='quote' className='qicon up'/>
+          <span className='quote'>Cleanliness is a necessity, not a luxury.</span>
+          <img src={qright} alt='quote' className='qicon down'/>
         <div className='subscript'>
           <b className='designation'>Rahul Gupta</b>
           <i className='author'>CEO, Founder</i>

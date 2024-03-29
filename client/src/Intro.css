@@ -1,25 +1,24 @@
 .intro{
    display: flex;
-   align-items: center;
-   flex: .75;
+   flex-direction: column;
    background-color: #fbfbfb;
    padding: 64px;
-   height: 300px;
+   margin: auto;
+   z-index: 1;
+
 }
-.tab-content{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-family: "Ubuntu", sans-serif;
-   font-size: 18px;
-   font-weight: 100;
-}.nav{
-border-right: 1px solid #111;
+.tabContext{
+   z-index: 1;
+   width: 100%;
 }
-.nav>button{
-   display: flex;
-   width: 100px;
-   text-align: center;
-   justify-content: center;
-   margin: 10px;
+.tabContenet{
+   z-index: 1;
+   width: 100%;
+   text-align: left;
+}
+
+@media screen and (max-width:800px) {
+   .intro{
+      padding: 24px;
+   }
 }

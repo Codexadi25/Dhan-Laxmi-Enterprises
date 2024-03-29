@@ -5,10 +5,13 @@ import Store from './Store.js';
 import Header from './Header.js';
 import Footer from './Footer.js';
 import Checkout from './Checkout.js';
+import TNC from './TNC';
+
 
 
 function App() {
 
+  
   // useEffect(() => {
   //   axios.get('http://localhost:8080')
   // }, [])
@@ -22,6 +25,7 @@ function App() {
             <Route path='/home' element={<Home/>}/>
             <Route path='/store' element={<Store/>}/>
             <Route path='/checkout' element={<Checkout/>}/>
+            <Route path='/terms-conditions' element={<TNC/>}/>
          </Routes>
       </Router>
       <Footer/>

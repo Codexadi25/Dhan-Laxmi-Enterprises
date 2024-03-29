@@ -5,9 +5,15 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
 
+<<<<<<< HEAD
+function Product({ id, title, prodImg, price, mrp, rating, qty, user, address, cono }) {
+=======
 function Product({ id, title, prodImg, price, mrp, rating }) {
+>>>>>>> d35240bf0486abc5f18c616085e9c73e351af7d4
 
   let discount = (!mrp)?0:((mrp - price)/mrp)*100;
+
+
   return (
     <div className='product'>
       <Link to={`/store/${id}`}>
@@ -36,7 +42,9 @@ function Product({ id, title, prodImg, price, mrp, rating }) {
                <p>⭐</p>
           ))}
           </span>
-          <Link to="" className='addCartBtn'><AddShoppingCartIcon/>Add to Cart</Link>
+          <Link to={`https://wa.me/+918081034446?text=Order:%20*${title}*%20%20Price:${price*qty}%20%20%20Quantity:*${qty}Unit*%20ordered%20by%20*${user}*:%20Address:${address}%20%20Contact%20no.:%20${cono}%20%20`} target='__blank'  className='addCartBtn'>
+            <AddShoppingCartIcon/>Add to Cart
+          </Link>
         </div>
       </div>
     </div>

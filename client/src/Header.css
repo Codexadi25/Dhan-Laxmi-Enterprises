@@ -63,3 +63,19 @@
    text-decoration: underline;
 }
 
+
+
+.shownav{
+   visibility: visible;
+}
+
+
+@media screen and (max-width:800px) {
+   .nav{
+      width: 100%;
+      flex: auto;
+   }
+   .ac{
+      display: none;
+   }
+}

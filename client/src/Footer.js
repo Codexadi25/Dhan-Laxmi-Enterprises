@@ -29,15 +29,7 @@ function Footer() {
             <a href='' target='__blank' className='links'>About Us</a>
             <a href='' target='__blank' className='links'>FAQs</a>
             <a href='' target='__blank' className='links'>Help & Support</a>
-            <a href='' target='__blank' className='links'>Terms & Conditions</a>
-          </div>
-          <div className='sections'>
-            <div className='heading'>
-              Connect Us
-            </div>
-            <a href='https://www.instagram.com/' target='__blank' className='links ig'><InstagramIcon/>Instagram</a>
-            <a href='' target='__blank' className='links fb'><FacebookIcon/>Facebook</a>
-            <a href='https://wa.me/+91?text=HI!%20I%20want%20to%20know%20more%20about%20Dhan%20Laxmi%20Enterprises.' target='__blank' className='links wa'><WhatsAppIcon/>WhatsApp</a>
+            <a href='terms-conditions' target='__blank' className='links'>Terms & Conditions</a>
           </div>
           <div className='sections'>
             <div className='heading'>
@@ -54,9 +46,17 @@ function Footer() {
             <a href='' className='links'>Fexo</a>
             <a href='' className='links'>Dhan Laxmi Enterprises</a> 
           </div>
-          <div className='sections'>
+          <div className='sections dev'>
             <div className='heading'>Devloper's Contact
               <a href='https://adityatechndevops.web.app' className='links' target='__blank' >Aditya Tech & Devops&nbsp;<LaunchIcon fontSize='14'/></a></div>
+          </div>
+          <div className='sections social'>
+            <div className='heading'>
+              Social
+            </div>
+            <a href='https://www.instagram.com/' target='__blank' className='links ig'><InstagramIcon/><span className='s-lable'>Instagram</span></a>
+            <a href='' target='__blank' className='links fb'><FacebookIcon/><span className='s-lable'>Facebook</span></a>
+            <a href='https://wa.me/+91?text=HI!%20I%20want%20to%20know%20more%20about%20Dhan%20Laxmi%20Enterprises.' target='__blank' className='links wa'><WhatsAppIcon/><span className='s-lable'>WhatsApp</span></a>
           </div>
         </div>
       </div>
