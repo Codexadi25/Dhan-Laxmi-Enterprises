@@ -5,11 +5,7 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
 
-<<<<<<< HEAD
 function Product({ id, title, prodImg, price, mrp, rating, qty, user, address, cono }) {
-=======
-function Product({ id, title, prodImg, price, mrp, rating }) {
->>>>>>> d35240bf0486abc5f18c616085e9c73e351af7d4
 
   let discount = (!mrp)?0:((mrp - price)/mrp)*100;
 
