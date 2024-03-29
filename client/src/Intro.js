@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 import { React, useState } from 'react';
-=======
-<<<<<<< HEAD
 import { React, useState } from 'react';
-=======
->>>>>>> 6dde7796be895b8784241f15415167f0d71843d4
 import React from 'react-tabs';
->>>>>>> d35240bf0486abc5f18c616085e9c73e351af7d4
 import './Intro.css';
 
 import Box from '@mui/material/Box';
