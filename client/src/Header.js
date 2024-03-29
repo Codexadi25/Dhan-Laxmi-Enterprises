@@ -45,11 +45,11 @@ function Header( cxname, cximg ) {
             </a>
          </Tooltip>
          
-         <Tooltip title='Cart'>
+         {/* <Tooltip title='Cart'>
             <a href='/checkout'>
                <ShoppingCartIcon/>
             </a>
-         </Tooltip>
+         </Tooltip> */}
          <Tooltip title='Account' >
             <div className='profile'>
                <Avatar/>

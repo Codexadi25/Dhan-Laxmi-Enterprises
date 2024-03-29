@@ -5,7 +5,7 @@
    justify-content: flex-end;
    margin: 10px;
    padding: 24px;
-   width: auto;
+   width: contain;
    max-width: 600px;
    min-width: 300px;
    background-color: #fff;
@@ -78,6 +78,24 @@
    color: #898989;
    text-decoration: line-through;
    background-color: #ebebeb;
+}
+
+.qtyCounter{
+   display: flex;
+   align-items: center;
+   border-radius: 5px;
+   outline: 1px solid;
+   padding: 2px;
+   background-color: #ebebeb;
+}
+.qtyCounter>btn{
+   cursor: pointer;
+   width: 24px;
+}
+.qtyCounter>span{
+   width: 18px;
+   border-left: 1px solid;
+   border-right: 1px solid;
 }
 
 .productRating{

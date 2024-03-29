@@ -8,6 +8,7 @@ import { db } from './firebase.js'
 import { collection, getDocs } from 'firebase/firestore';
 
 function Store() {
+
   const [prod, setProd] = useState();
   const prodCollectionRef = collection(db, "productsDB")
 
@@ -26,17 +27,16 @@ function Store() {
         {prod?.map((item) => {
           return(
             <Product 
-              title={item.title}
+              title={item.title + ' ' + item.description}
               price={item.price} 
               mrp={item.mrp}
               rating={item.rating}
-              pimg={`${item.pimg+item.pimgtoken}`}
-              
+              prodImg={item.prodImg}
             />
           )
         })}
       </div>
-      <div className='storeRow'>
+      {/* <div className='storeRow'>
         <Product 
           title='Fexo Super Power Toilet Cleaner 1Liter X 24 Pcs per pack'
           price='750' 
@@ -58,7 +58,7 @@ function Store() {
           rating={5}
           pimg={img1}
         />
-      </div>
+      </div> */}
     </div>
   )
 }
