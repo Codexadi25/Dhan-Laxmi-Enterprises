@@ -1,0 +1,70 @@
+.tnc{
+   display: flex;
+   flex-direction: row;
+   width: 100vw;
+   height: 100vh;
+   gap: 5px !important;
+   padding: 5px;
+   background-color: #7678be;
+}
+.sidebar{
+   display: flex;
+   flex: .30;
+   flex-direction: column;
+   height: auto;
+   padding: 32px;
+   justify-content: left;
+   text-align: left;
+   background-color: #ebebeb;
+   border-radius: 16px;
+}
+.tncH{
+   width: min-content;
+   color: #0014ae;
+}
+.scr{
+   display: flex;
+   flex-direction: column;
+   overflow: scroll;
+   word-wrap: break-word;
+   counter-set: count 0;
+}
+.scr>a{
+   text-decoration: none;
+   color: #59008c;
+}
+.scr>a:hover{
+   color: #3950ff;
+   text-decoration: underline;
+}
+.scr>a::before{
+   counter-increment: count;
+   content: counter(count) ".  ";
+}
+
+.mainViewport{
+   flex: .70;
+   overflow: scroll;
+
+}
+#tncHeading{
+   color: #333;
+   font-family: "Ubuntu", sans-serif;
+}
+
+@media screen and (max-width:600px) {
+   .tnc{
+      flex-direction: column;
+      height: auto;
+      padding: 0;
+   }
+   .sidebar{
+      border-radius: 0;
+   }
+   .sidebarLeft{
+      
+   }
+   .mainViewport{
+      flex: 1;
+   }
+}

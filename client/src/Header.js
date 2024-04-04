@@ -8,9 +8,9 @@ import StoreIcon from '@mui/icons-material/Store';
 import Tooltip from '@mui/material/Tooltip';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Avatar } from '@mui/material';
-import Listing from './Listing.js';
-import Login from './Login.js';
-import Signup from './Signup.js';
+// import Listing from './Listing.js';
+// import Login from './Login.js';
+// import Signup from './Signup.js';
 
 //firebase DB 
 import { db } from './firebase.js'
@@ -19,7 +19,7 @@ import { collection, getDocs } from 'firebase/firestore';
 
 function Header( cxname, cximg ) {
 
-   const [cxuser, cxuseUser ] = useState('User');
+   const [cxuser, setCxuser ] = useState('User');
    const [goto, useGoto ] = useState('Login');
 
    useEffect(() => {
@@ -45,11 +45,11 @@ function Header( cxname, cximg ) {
             </a>
          </Tooltip>
          
-         {/* <Tooltip title='Cart'>
+         <Tooltip title='Cart'>
             <a href='/checkout'>
                <ShoppingCartIcon/>
             </a>
-         </Tooltip> */}
+         </Tooltip>
          <Tooltip title='Account' >
             <div className='profile'>
                <Avatar/>
@@ -63,13 +63,13 @@ function Header( cxname, cximg ) {
          </Tooltip>
       </div>
 
-      <Router>
+      {/* <Router>
          <Routes>
             <Route path='/user/external/rahul' element={<Listing/>}/>
             <Route path='/user/internal/admin' element={<Login/>}/>
             <Route path={`/login/`+ cxuser} element={<Signup/>}/>
          </Routes>
-      </Router>
+      </Router> */}
 
     </div>
   )
