@@ -17,7 +17,7 @@ function Store() {
     }
 
     getProd();
-  }, [])
+  }, [prodCollectionRef])
 
 
   return (

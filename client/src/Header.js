@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './Header.css';
 import Logo from './assets/DLEP.png'
-import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import StoreIcon from '@mui/icons-material/Store';
 import Tooltip from '@mui/material/Tooltip';
@@ -17,10 +16,11 @@ import { db } from './firebase.js'
 import { collection, getDocs } from 'firebase/firestore';
 
 
-function Header( cxname, cximg ) {
+function Header( props ) {
 
    const [cxuser, setCxuser ] = useState('User');
    const [goto, useGoto ] = useState('Login');
+   const [logs, useLogs] = useState('/v2/login');
 
    useEffect(() => {
       const getUser = async () => {
@@ -54,7 +54,7 @@ function Header( cxname, cximg ) {
             <div className='profile'>
                <Avatar/>
                <span className='ac'>
-                  <a href='/'>
+                  <a href={`${logs}`}>
                      <div className='l1'>Hi, {cxuser}</div>
                      <div className='l2'>{goto}</div>
                   </a>

@@ -36,7 +36,7 @@ function Footer() {
               Reach Us
             </div>
             <a href='mailto:/.com' className='links mail'><MailIcon/>E-mail</a>
-            <a href='https://wa.me/+91?text=HI!%20I%20want%20to%20know%20more%20about%20Dhan%20Laxmi%20Enterprises.' target='__blank' className='links wa'><WhatsAppIcon/>WhatsApp</a>
+            <a href='https://http://wa.me/+917905282369?text=HI!%20I%20want%20to%20know%20more%20about%20Dhan%20Laxmi%20Enterprises.' target='__blank' className='links wa'><WhatsAppIcon/>WhatsApp</a>
             
           </div>
           <div className='sections'>
@@ -56,7 +56,7 @@ function Footer() {
             </div>
             <a href='https://www.instagram.com/' target='__blank' className='links ig'><InstagramIcon/><span className='s-lable'>Instagram</span></a>
             <a href='' target='__blank' className='links fb'><FacebookIcon/><span className='s-lable'>Facebook</span></a>
-            <a href='https://wa.me/+91?text=HI!%20I%20want%20to%20know%20more%20about%20Dhan%20Laxmi%20Enterprises.' target='__blank' className='links wa'><WhatsAppIcon/><span className='s-lable'>WhatsApp</span></a>
+            <a href='https://http://wa.me/+917905282369?text=HI!%20I%20want%20to%20know%20more%20about%20Dhan%20Laxmi%20Enterprises.' target='__blank' className='links wa'><WhatsAppIcon/><span className='s-lable'>WhatsApp</span></a>
           </div>
         </div>
       </div>
