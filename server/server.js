@@ -30,50 +30,56 @@ app.engine("ejs",engine);
 app.use(express.static(path.join(__dirname, "/public")));
 
 app.get("/", (req, res) => {
-  res.redirect("/listings");
+  res.redirect("/external/dashboard");
 });
 
+
+
 //Index Route
-app.get("/listings", async (req, res) => {
+app.get("external/listings", async (req, res) => {
+   const vendor = [{
+      name:"DLEP",
+      page:"Dashboard"
+   }]
   const allListings = await Listing.find({});
-  res.render("listings/index.ejs", { allListings });
+  res.render("listings/index.ejs", { allListings, vendor });
 });
 
 //New Route
-app.get("/listings/new", (req, res) => {
+app.get("external/listings/new", (req, res) => {
   res.render("listings/new.ejs");
 });
 
 //Show Route
-app.get("/listings/:id", async (req, res) => {
+app.get("external/listings/:id", async (req, res) => {
   let { id } = req.params;
   const listing = await Listing.findById(id);
   res.render("listings/show.ejs", { listing });
 });
 
 //Create Route
-app.post("/listings", async (req, res) => {
+app.post("external/listings", async (req, res) => {
   const newListing = new Listing(req.body.listing);
   await newListing.save();
   res.redirect("/listings");
 });
 
 //Edit Route
-app.get("/listings/:id/edit", async (req, res) => {
+app.get("external/listings/:id/edit", async (req, res) => {
   let { id } = req.params;
   const listing = await Listing.findById(id);
   res.render("listings/edit.ejs", { listing });
 });
 
 //Update Route
-app.put("/listings/:id", async (req, res) => {
+app.put("external/listings/:id", async (req, res) => {
   let { id } = req.params;
   await Listing.findByIdAndUpdate(id, { ...req.body.listing });
   res.redirect(`/listings/${id}`);
 });
 
 //Delete Route
-app.delete("/listings/:id", async (req, res) => {
+app.delete("external/listings/:id", async (req, res) => {
   let { id } = req.params;
   let deletedListing = await Listing.findByIdAndDelete(id);
   console.log(deletedListing);
@@ -93,6 +99,12 @@ app.get("/testListing", async (req, res) => {
   console.log("sample was saved");
   res.send("successful testing");
 });
+
+// NO Such Page 
+app.get("*", (req, res) => {;
+   res.render()
+});
+
 
 app.listen(8080, () => {
   console.log("server is listening to port 8080");

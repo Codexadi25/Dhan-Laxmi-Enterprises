@@ -13,6 +13,20 @@
 }
 
 
+/* Wrapper | Boilerplate */
+.container{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+/* Index | Dashboard | Home*/
+.card{
+   height: auto;
+   width: 100%;
+}
+
+
 /* Footer */
 .footer{
    display: flex;

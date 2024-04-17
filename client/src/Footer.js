@@ -19,17 +19,16 @@ function Footer() {
       <div className='footer__body'>
         <div className='footer__box'>
           <img src={footLogo} className='footlogo' alt='DhanLaxmiEnterprise-logo'/>
-          <p className='tagline'><h3>Dhan Laxmi Enterprise</h3>A Kanpur-south based multi-business enterprise.</p>
+          <p className='tagline'><h3>Dhan Laxmi Enterprises</h3>A Kanpur-south based multi-business enterprise.</p>
         </div>
         <div className='footer__links'>
           <div className='sections'>
             <div className='heading'>
               Helpful Links
             </div>
-            <a href='' target='__blank' className='links'>About Us</a>
-            <a href='' target='__blank' className='links'>FAQs</a>
-            <a href='' target='__blank' className='links'>Help & Support</a>
-            <a href='terms-conditions' target='__blank' className='links'>Terms & Conditions</a>
+            <a href='/t&c#intro' className='links'>FAQs</a>
+            <a href='/help' className='links'>Help & Support</a>
+            <a href='terms-conditions' className='links'>Terms & Conditions</a>
           </div>
           <div className='sections'>
             <div className='heading'>
@@ -43,8 +42,8 @@ function Footer() {
             <div className='heading'>
               Businesses
             </div>
-            <a href='' className='links'>Fexo</a>
-            <a href='' className='links'>Dhan Laxmi Enterprises</a> 
+            <a href='/store' className='links'>Fexo</a>
+            <a href='/home' className='links'>Dhan Laxmi Enterprises</a> 
           </div>
           <div className='sections dev'>
             <div className='heading'>Devloper's Contact
@@ -56,7 +55,7 @@ function Footer() {
             </div>
             <a href='https://www.instagram.com/' target='__blank' className='links ig'><InstagramIcon/><span className='s-lable'>Instagram</span></a>
             <a href='' target='__blank' className='links fb'><FacebookIcon/><span className='s-lable'>Facebook</span></a>
-            <a href='https://http://wa.me/+917905282369?text=HI!%20I%20want%20to%20know%20more%20about%20Dhan%20Laxmi%20Enterprises.' target='__blank' className='links wa'><WhatsAppIcon/><span className='s-lable'>WhatsApp</span></a>
+            <a href='https://wa.me/+917905282369?text=HI!%20I%20want%20to%20know%20more%20about%20Dhan%20Laxmi%20Enterprises.' target='__blank' className='links wa'><WhatsAppIcon/><span className='s-lable'>WhatsApp</span></a>
           </div>
         </div>
       </div>

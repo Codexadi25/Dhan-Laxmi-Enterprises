@@ -17,7 +17,7 @@ function Home() {
     <div className='home'>
       <img src={banner} className='homeBanner' alt='DhanLaxmiEnterprise-banner'/>
       <div className='bannerText'>
-        <h1 className='companyHeading'>Dhan Laxmi Enterprise</h1>
+        <h1 className='companyHeading'>Dhan Laxmi Enterprises</h1>
         <p className='tagline'>
           <span className='p1'>
             Visioning for a&nbsp;

@@ -6,7 +6,7 @@ function TNC() {
     <div className='tnc'>
       <span className='sidebar sidebarLeft'>
         <div class="tncH">
-          <h3>DHANLAXMI ENTERPRISE</h3>
+          <h3>DHAN LAXMI ENTERPRISES</h3>
           <u>In this page.</u>
         </div>
         <div className='scr'>
@@ -125,7 +125,7 @@ function TNC() {
           </p>
         </div>
         <div class="tncSection" id="dlepcontent">
-          <h4 id="tncHeading">Dhan Laxmi Enterprise Content and User Content License</h4>
+          <h4 id="tncHeading">Dhan Laxmi Enterprises Content and User Content License</h4>
           <p class="tncPara">
             <i>Subject To Your Compliance With These Terms, Dhan Laxmi Enterprises Grants You A Limited, Non-Exclusive, Non-Transferable License, To 
               <li>Access And View Any Dhan Laxmi Enterprises Content Solely For Your Personal And Non-Commercial Purposes And </li>
@@ -171,15 +171,15 @@ function TNC() {
             <li>Dhan Laxmi Enterprises shall have no liability of any nature, whether in contract, or otherwise, for any losses whatsoever and howsoever caused, from or in any manner connected with any of the Services provided by Us.</li>
             <li>Dhan Laxmi Enterprises is not liable for any failure or delay of performance (or otherwise) arising out of a cause beyond Dhan Laxmi Enterprises’ reasonable control.</li>
             <li>You may not assign or transfer these Terms without Dhan Laxmi Enterprises' prior written consent. Any attempt by you to assign or transfer these Terms, without such consent, will be of no effect. Dhan Laxmi Enterprises may assign or transfer these Terms, at its sole discretion, without restriction. Subject to the foregoing, these Terms will bind and inure to the benefit of the parties, their successors and permitted assigns.</li>
-            <li>•	Dhan Laxmi Enterprises reserves the right at any time and from time to time to modify or discontinue, temporarily or permanently, the Services provided by us with or without notice. You accept that Dhan Laxmi Enterprises shall not be liable to You or to any third party for any modification of such Services. It is your responsibility to review these Terms periodically for updates and changes.</li>
+            <li>Dhan Laxmi Enterprises reserves the right at any time and from time to time to modify or discontinue, temporarily or permanently, the Services provided by us with or without notice. You accept that Dhan Laxmi Enterprises shall not be liable to You or to any third party for any modification of such Services. It is your responsibility to review these Terms periodically for updates and changes.</li>
             <li>You agree not to reproduce, duplicate, copy, sell, resell or exploit for any commercial purposes, any portion of the information provided by us, including any intellectual property rights of Dhan Laxmi Enterprises or any person firm or corporation having posted information for availability through the Services provided by us.</li>
             <li>You agree that in the event your post or your information violates any provision of this Terms, We shall have the right to refuse to provide you or any person acting on your behalf, access to the Website, terminate and / or suspend your access if applicable in the future.</li>
           </p>
         </div>
         <div class="contactUs" id="contact">
           <h4>Contact US</h4>
-          <li>Address : Yogendra Vihar, H/No. 21, Naubasta, Kanpur (Pincode - 208021)</li>
-          <li>Email : pahulmanoj3537@gmail.com</li>
+          <li>Address : 26, Yogendra Vihar,  Naubasta, Kanpur (Uttar Pradesh - 208021)</li>
+          <li>Email : rahul.dhanlaxmienterprise@gmail.com</li>
         </div>
         <hr/>
         <b>YOU HAVE READ THESE TERMS OF USE AND AGREE TO ALL OF THE PROVISIONS CONTAINED ABOVE.</b>
