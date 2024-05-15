@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
-import AccountMenu from './assets/authentication';
+import AccountMenu from '../assets/authentication';
 
 import { Tooltip } from '@mui/material';
 import DashboardIcon from '@mui/icons-material/Dashboard';
@@ -15,14 +15,11 @@ function Header() {
 
    async function searchFnxn(e, query){
       e.preventDefault();
-      const results = await fetch('/api/search?q='+query)
+      const results = await fetch(''+query)
 
       return results.json();
    }
 
-   useEffect (async () => {
-      const results = await searchFnxn(query)
-   }, []);
    
 
   return (
@@ -30,10 +27,10 @@ function Header() {
       <nav class="navBar">
          <span class="navLeft">
             <Tooltip title="Dashboard">
-               <a className='navElement' href="/"><DashboardIcon/></a>
+               <a className='navElement' href="/dashboard"><DashboardIcon/></a>
             </Tooltip>
             <Tooltip title="Listings">
-               <a className='navElement' href="/"><ViewListIcon/></a>
+               <a className='navElement' href="/dashboard/listings"><ViewListIcon/></a>
             </Tooltip>
          </span>
          <span class="navRight">

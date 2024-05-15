@@ -52,7 +52,7 @@ function Product({ id, title, desc, prodImg, price, mrp, rating, user, address, 
         </div>
         <div className='productRating'>
           <span>
-          {Array(rating)
+          {Array(Number(rating))
                .fill()
                .map((i) => (
                <p>⭐</p>

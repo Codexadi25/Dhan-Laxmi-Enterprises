@@ -1,0 +1,28 @@
+.listingForm{
+   display: flex;
+   flex-direction: column;
+   padding: 24px;
+   background-color: #dde7f0;
+}
+.listingForm{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.section{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   justify-content: space-evenly;
+   padding: 5px;
+   border-radius: 10px;
+   background-color: #f7f7f7;
+}
+#title{
+   flex: .65;
+   height: 42px !important;
+}
+.desc{
+   display: grid;
+   grid-auto-flow: column;
+}

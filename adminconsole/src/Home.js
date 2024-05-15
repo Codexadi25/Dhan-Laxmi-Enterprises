@@ -4,7 +4,6 @@ import Skeleton from '@mui/material/Skeleton';
 
 
 function Home(props) {
-
    const { loading = false } = props;
 
   return (

@@ -1,0 +1,82 @@
+.listings{
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   margin: 10px;
+}
+.newbtn{
+   display: flex;
+   height: 32px;
+   width: max-content;
+   border: 1px solid #c9c9c9;
+   padding: 2px 5px;
+   align-items: center;
+   border-radius: 8px;
+   color: #006BD6;
+}
+.newbtn:hover, .element:hover{
+   background-color: aliceblue;
+   box-shadow: -2px 4px 4px #006BD6;
+   border: 1px solid #006BD6;
+   outline: 1px solid #fff;
+}
+
+.listed{
+   width: auto;
+   margin: 10px;
+   align-items: center;
+   justify-content: center;
+}
+.element{
+   display: flex;
+   flex-direction: row;
+   width: auto;
+   padding: 5px 10px;
+   font-size: 16px;
+   border-radius: 5px;
+   background-color: #f9f9f9;
+}
+.listHead{
+   background-color: #eaeaea !important;
+   height: auto;
+   align-items: center;
+   border-radius: 5px 5px 0px 0px !important;
+   color: black !important;
+   box-shadow: none !important;
+   border-bottom: 1px solid #000 !important;
+   outline: none !important;
+   font-weight: 500;
+}
+
+.elementLeft{
+   display: flex;
+   flex: .75;
+   width: auto;
+   justify-content: space-between;
+}
+.elementRight{
+   display: flex;
+   flex: .25;
+   width: auto;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.title{
+   width: 40%;
+   text-align: left;
+   border-right: 1px solid #c9c9c9;
+}
+.sp, .rating, .mrp, .discount{
+   width: 20%;
+   justify-content: center;
+   text-align: center;
+   border-right: 1px solid #c9c9c9;
+}
+.discount{
+   color: red;
+}
+.prodId{
+   width: max-content;
+   text-align: center;
+}
