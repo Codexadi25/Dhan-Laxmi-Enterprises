@@ -6,9 +6,9 @@ const Listing = require("./models/listing.js");
 const path = require("path");
 const methodOverride = require("method-override");
 
-const dbUri = "mongodb+srv://creedracer111:CBG7ewqYYP4KsGu2@cluster0.lbblfev.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const dbURI = "mongodb+srv://serverBotA:2VSefUSIrk5FlRTX@cluster0.tiu5lne.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+// const dbURI = "mongodb+srv://creedracer111:CBG7ewqYYP4KsGu2@cluster0.lbblfev.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
-const MONGO_URL = dbUri;
 
 main()
   .then(() => {
@@ -19,7 +19,7 @@ main()
   });
 
 async function main() {
-  await mongoose.connect(MONGO_URL);
+  await mongoose.connect(dbURI);
 }
 
 app.set("view engine", "ejs");
@@ -30,19 +30,14 @@ app.engine("ejs",engine);
 app.use(express.static(path.join(__dirname, "/public")));
 
 app.get("/", (req, res) => {
-  res.redirect("/external/dashboard");
+  res.redirect("/external/listings");
 });
 
 
 
 //Index Route
 app.get("external/listings", async (req, res) => {
-   const vendor = [{
-      name:"DLEP",
-      page:"Dashboard"
-   }]
-  const allListings = await Listing.find({});
-  res.render("listings/index.ejs", { allListings, vendor });
+  res.render("listings/index.ejs", );
 });
 
 //New Route
