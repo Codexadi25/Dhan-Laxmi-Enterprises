@@ -106,7 +106,10 @@ Before you begin, ensure you have the following installed on your local machine:
 3. Install the required dependencies:
 
    ```bash
-   npm install
+   | client        |  server       |
+   |---------------|---------------|
+   |  cd client    | cd server     |
+   |  npm install  | npm install   |
    ```
 
 4. Set up your environment variables:
@@ -115,9 +118,10 @@ Before you begin, ensure you have the following installed on your local machine:
    - Add the necessary configuration variables:
 
    ```plaintext
-   DB_URI=mongodb://localhost:27017/dhanlaxmi
+   DB_URI=mongodb://localhost:27017/dhanlaxmi-en
    JWT_SECRET=your-secret-key
    ```
+   **⚠️** Note: You might get error while using these secret keys because original secret keys are not disclosed on this document. For seamless development experience please generate your own secret keys and then add them in the .env file.
 
 ### Running the Project
 
@@ -126,18 +130,20 @@ To run the frontend and backend simultaneously:
 1. In one terminal, run the backend:
 
    ```bash
-   npm run server
+   cd server
+   nodemon start
    ```
 
 2. In another terminal, run the frontend:
 
    ```bash
-   npm run client
+   cd client
+   npm start
    ```
 
 ---
 
-## Usage 📈
+## Usage
 
 Once the project is running, you can:
 
@@ -198,4 +204,4 @@ Special thanks to the open-source community for the tools and libraries that pow
 
 ---
 
-🔙 [Return to Top](#dhan-laxmi-enterprises)
+🔝 [Return to Top](#dhanlaxmi-enterprises)
